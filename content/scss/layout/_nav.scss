@@ -12,9 +12,7 @@
   width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
 
-  @include responsive(max, 768) {
-    margin-inline: 20px;
-  }
+
 
   @include responsive(max, 380) {
     flex-wrap: nowrap;

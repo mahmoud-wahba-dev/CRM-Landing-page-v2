@@ -184,6 +184,9 @@
     color: $color_text_50;
     margin-bottom: 48px;
     width: 50%;
+    @include responsive(max,425){
+      width: 100%;
+    }
   }
   .left_card_container {
     border-top-#{$e}-radius: 24px;
