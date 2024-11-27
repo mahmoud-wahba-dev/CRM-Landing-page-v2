@@ -1,0 +1,50 @@
+.footer {
+  background-color: #fff;
+  padding-bottom: 20px;
+  padding-top: 82px;
+  @include responsive(max, 425) {
+    padding-bottom: 0;
+
+  }
+  .logo_container {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  hr {
+    margin: 0;
+    border-color: #2222223d;
+    opacity: 1;
+  }
+  .links_conatiner {
+    padding-block: 25px;
+    display: flex;
+    justify-content: space-between;
+    @include responsive(max, 416) {
+    flex-wrap: wrap;
+    padding-block: 10px;
+    gap: 10px;
+
+    }
+    .copywright_sec {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19.6px;
+      color: #838b7f;
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      @include responsive(max, 425) {
+        gap: 10px;
+      }
+      a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.64px;
+        color: #656b61;
+      }
+    }
+  }
+}

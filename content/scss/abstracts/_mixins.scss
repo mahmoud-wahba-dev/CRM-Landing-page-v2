@@ -1,0 +1,32 @@
+/* mixin for responsive it takes
+    type : min or max
+    size : 100px for the width of target screen
+*/
+
+@mixin responsive($type, $size) {
+  @media (#{$type}-width: #{$size}px) {
+    @content;
+  }
+}
+
+
+@mixin lines_num($num) {
+    display: -webkit-box; /* Use a flexbox model for block container */
+    -webkit-line-clamp: $num; /* Show only 3 lines */
+    -webkit-box-orient: vertical; /* Stack children vertically */
+    overflow: hidden; /* Hide overflowed content */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflowed text */
+  }
+
+
+  // Mixin to apply RTL styles only if $e-dir is false
+@mixin rtl() {
+  @if $e-dir == false {
+      // Apply the content passed inside the mixin
+      @content;
+  }
+}
+
+
+
+// Mixin to apply LTR styles only if $e-dir is true

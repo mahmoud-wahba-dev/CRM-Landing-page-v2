@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "DGAgnadeen";
+  // src: url("{{ asset('content/fonts/DGAgnadeen-Regular.ttf') }}");
+}
+
+$mainFont: "DGAgnadeen", sans-serif;
+
+// $mainFont: "Rubik", sans-serif;
+
+$s: left;
+$e: right;
+
+$n: -1;
+$p: 1;
+
+$e-dir: true;
+
+body {
+  direction: ltr;
+  font-family: $mainFont;
+}

@@ -1,0 +1,43 @@
+.center_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb_19 {
+    margin-bottom: 19px;
+}
+
+.text_primary {
+    color: $main_color;
+}
+
+.btns_container {
+    display: flex;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gap_42 {
+    gap: 42px;
+}
+
+.gap_16 {
+    gap: 16px;
+}
+
+.gap_48 {
+    gap: 48px;
+}
+
+.gap_20 {
+    gap: 20px;
+}
+
+.gap_40 {
+    gap: 40px;
+}
+
