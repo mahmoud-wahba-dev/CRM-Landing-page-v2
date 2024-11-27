@@ -2,8 +2,16 @@
   display: flex;
   align-items: center;
   height: 67px;
-  margin-inline: 94px;
+  // margin-inline: 94px;
   padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 999;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+
   @include responsive(max, 768) {
     margin-inline: 20px;
   }
@@ -12,12 +20,18 @@
     flex-wrap: nowrap;
     margin-inline: 10px;
   }
+  .container {
+    height: 100%;
+  }
   .navbar-brand {
+    height: 100%;
     @include responsive(max, 380) {
       width: 50%;
     }
 
     img {
+      height: 100%;
+
       @include responsive(max, 380) {
         width: 100%;
         height: auto;
@@ -62,7 +76,6 @@
     }
 
     .btns_container {
-
       display: flex;
       align-items: center;
       gap: 12px;
@@ -71,7 +84,7 @@
       }
       .btn_login {
         border: 1px solid $color_primary;
-        padding: 16px 17px; 
+        padding: 16px 17px;
         font-size: 16px;
         font-weight: 700;
         line-height: 16px;
